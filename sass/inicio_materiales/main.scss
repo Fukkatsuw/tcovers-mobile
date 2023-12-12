@@ -1,0 +1,195 @@
+/* ----------------------------- ESTILOS INDEX MOBILE FIRST ----------------------------*/
+.box-text-index1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD4D0 ;
+    width: 100%;
+    height: 320px;
+
+    .h1-index{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .p-text-index1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.9rem;
+        font-size: 1.3rem;
+        color: #1F1F1F;
+    }
+    .btn-vermodelos button{
+        background-color: #1F1F1F;
+        color: white;
+        padding: 10px 40px;
+        text-decoration: none;
+        border-style: none;
+        border-radius: 3px;
+        margin-top: 30px;
+        }
+}
+.egoistimg{
+    display: none;
+}
+
+
+/* ----------------------------- ESTILOS INDEX  #2 MOBILE FIRST ----------------------------*/
+
+.Text-index2{
+    background-color: #1F1F1F;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    .boxtext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .h2-materiales{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-top: 20px;
+            color: white;
+        }
+        .p-text-index{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 15px;
+            color: #F7F7F7;
+            line-height: 25px;
+        }
+    }
+}
+.boxicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .boxicon img{
+        width: 50px;
+        height: auto;
+        margin: 15px;
+        filter: invert(100%);
+    }
+}
+
+/* ----------------------------- ESTILOS Index DESKTOP Second ----------------------------*/
+
+@media (min-width: 768px){
+    /*SECTION PRINCIPAL#1*/
+    .box-text-index1{
+        display: flex;
+        position: relative;
+        background-color: #FFD4D0;
+        width: 100%;
+        height: 597px;
+        align-items: start;
+        justify-content: center;
+
+        .h1-index{
+            margin-left: 120px;
+            margin-bottom: 0;
+            padding-bottom: 40px;
+            font-size: 5.5rem;
+        }
+        .p-text-index1{
+            margin-left: 130px;
+            padding-bottom: 40px;
+            line-height: 40px;
+            white-space: pre-wrap;
+            font-size: 1.3rem;
+        }
+        .btn-vermodelos{
+            text-decoration: none;
+        }
+        .btn-vermodelos button{
+            display: flex;
+            font-weight: 900;
+            color: #ffffff;
+            padding: 17px 60px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+            margin-left: 270px;
+            background-color: #1F1F1F;
+            box-shadow: 3px 4px 15px 0 #1F1F1F;
+        }
+        .btn-vermodelos button:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    /*EGOIST BANNER #1 HERO*/
+    .egoistimg{
+        display: flex;
+        position: absolute;
+        width: 844px;
+        height: auto;
+        top: 62px;
+        right: 70px;
+    }
+    /* ----------------------------- ESTILOS Index DESKTOP Second ----------------------------*/
+    .Text-index2{
+        background-color: #1F1F1F;
+        color: white;
+        width: 100%;
+        height: auto;
+    }
+    .boxtext{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .h2-materiales{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color: white;
+        }
+        .p-text-index{
+            padding: 0px 60px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 15px;
+            color: #F7F7F7;
+            line-height: 30px;
+            width: 900px;
+            height: auto;
+            text-align: center;
+        }
+    }
+
+    .boxicon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .boxicon img{
+        width: 70px;
+        height: auto;
+        margin: 15px;
+        filter: invert(100%);
+    }
+}
+
+@media (max-width: 1344px){
+    .egoistimg{
+        display: none;
+    }
+
+}
+
+

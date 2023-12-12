@@ -1,0 +1,68 @@
+/*---------- PAGINA 3 INFORMACION MOBILE FIRST */
+.t-info{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.box-informacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.box-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.informacion {
+    width: calc(50% - 20px);
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+
+.informacion img {
+    width: 45%;
+    height: auto;
+    font-size: 45px;
+}
+
+.informacion .h2-envios {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.informacion .p-informacion {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    color: #1F1F1F;
+}
+
+@media (min-width: 768px){
+    .box-row {
+        flex-direction: row;
+        width: 50%;
+        padding: 45px;
+    }
+    
+    .informacion {
+        padding: 30px;
+    }
+    
+    .informacion img {
+        width: 30%;
+    }
+}

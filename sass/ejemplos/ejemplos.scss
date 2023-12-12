@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    max-width: 800px;
+    margin: 12px auto;
+
+    .grid img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.p-text-ejemplo {
+    text-align: center;
+    color: #1F1F1F;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .p-text-ejemplo {
+        font-size: 2.3rem;
+        margin-top: 50px;
+    }
+
+    .container {
+        margin-top: 200px;
+    }
+
+    .grid img {
+        width: 100%;
+    }
+
+    .main-ejemplos {
+        height: 100vh;
+    }
+}
+

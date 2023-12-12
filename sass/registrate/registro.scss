@@ -1,0 +1,82 @@
+$body-color: rgba(36, 36, 36, 1);
+$main-padding: 20px;
+$register-bg: #242424;
+$register-color: #F7F7F7;
+$register-border-radius: 20px;
+$register-box-shadow: 7px 13px 37px #000;
+$register-max-width: 400px;
+$controls-bg: #242424;
+$controls-margin-bottom: 10px;
+$controls-padding: 10px;
+$controls-border-radius: 4px;
+$controls-border: 1px solid #3D3D3D;
+$controls-font-size: 14px;
+$controls-color: white;
+$paragraph-color: #F7F7F7;
+$button-bg: #007BFF;
+$button-color: #fff;
+$button-padding: 10px;
+$button-cursor: pointer;
+$button-border-radius: 5px;
+$image-display: none;
+
+.body-registrate {
+    background: $body-color;
+}
+
+.registro-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $main-padding;
+}
+
+.logo-registro img {
+    width: 150px;
+}
+
+.from-register {
+    background: $register-bg;
+    color: $register-color;
+    font-family: 'calibri';
+    padding: $main-padding;
+    border-radius: $register-border-radius;
+    box-shadow: $register-box-shadow;
+    width: 100%;
+    max-width: $register-max-width;
+    .from-register p {
+        text-decoration: none;
+        font-style: none;
+        text-align: center;
+        font-size: 13px;
+        line-height: 30px;
+        color: $paragraph-color;
+    }
+}
+
+.controls {
+    width: 100%;
+    background: $controls-bg;
+    margin-bottom: $controls-margin-bottom;
+    padding: $controls-padding;
+    border-radius: $controls-border-radius;
+    box-sizing: border-box;
+    border: $controls-border;
+    font-size: $controls-font-size;
+    color: $controls-color;
+}
+
+.boton {
+    background-color: $button-bg;
+    color: $button-color;
+    border: none;
+    padding: $button-padding;
+    cursor: $button-cursor;
+    width: 100%;
+    border-radius: $button-border-radius;
+}
+
+.image-registro img {
+    display: $image-display;
+}

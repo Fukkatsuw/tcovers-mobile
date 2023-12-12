@@ -1,0 +1,135 @@
+/* ----------------------------- ESTILOS Modelo  MOBILE FIRST ----------------------------*/
+.Main-modelos {
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        text-align: center;
+        font-size: 2rem;
+        color: #1F1F1F;
+    }
+    
+    background: rgb(255, 212, 208);
+    background: linear-gradient(180deg, rgba(255, 212, 208, 1) 48%, rgba(240, 240, 240, 0.671) 48%);
+}
+
+.store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product {
+    width: calc(50% - 20px);
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    h2 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .price {
+        font-size: 14px;
+        color: #1F1F1F;
+    }
+    
+    button {
+        background-color: #242323;
+        color: #fff;
+        padding: 10px 15px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-style: none;
+        
+        &:hover {
+            background-color: #007a6e;
+        }
+    }
+}
+
+.product {
+    width: calc(100% - 20px);
+}
+
+@media (min-width: 768px){
+    .store {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 900px; 
+        margin: 0 auto; 
+    }
+    
+    /* Estilos para cada fila de productos */
+    .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Estilos para cada producto */
+    .product {
+        width: calc(33.33% - 20px);
+        padding: 10px;
+        text-align: center;
+        margin-top: 90px;
+        border-radius: 20px;
+        background-color: #f9f9f9;
+        
+        img {
+            max-width: 100%;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .price {
+            font-size: 16px;
+            color: #1F1F1F;
+            text-align: start;
+            padding: 10px 0px 0px 20px;
+        }
+        
+        button {
+            background-color: #FFD4D0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        
+        /* Estilo para el botón al pasar el cursor */
+        button:hover {
+            background-color: #007a6e;
+        }
+        
+        img{
+            width: 25rem;
+            height: auto;
+        }
+    }
+}
