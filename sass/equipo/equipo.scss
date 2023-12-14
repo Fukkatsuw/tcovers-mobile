@@ -81,6 +81,14 @@
         flex-wrap: nowrap;
     }
 
+    .cartas1 img,
+    .cartas2 img {
+    border-radius: 10px;
+    width: 140px;
+    height: auto;
+    margin: 10px 80px;
+    
+    }
     .cartas1 {
         margin: 0 50px;
     }

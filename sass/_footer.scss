@@ -5,6 +5,10 @@ footer {
     align-items: center;
     background-color: #1F1F1F;
     flex-grow: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
     ul {
         justify-content: center;
@@ -33,6 +37,10 @@ footer {
 
 @media (min-width: 768px) {
     footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         flex-direction: row;
 
         ul {
