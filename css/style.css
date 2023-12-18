@@ -332,7 +332,13 @@ body {
     padding-top: 40px;
     text-align: center;
   }
-  .box-cartas {
+  .box-team {
+    height: 400px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .box-team .box-cartas {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,21 +346,17 @@ body {
     height: auto;
     margin-top: 20px;
   }
-  .box-team {
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
-  .cartas1 img,
-  .cartas2 img {
+  .box-team .box-cartas .cartas1 img,
+  .box-team .box-cartas .cartas2 img {
     border-radius: 10px;
     width: 140px;
     height: auto;
     margin: 10px 70px;
   }
-  .cartas1 {
+  .box-team .box-cartas .cartas1 {
     margin: 0 50px;
   }
-  .cartas2 {
+  .box-team .box-cartas .cartas2 {
     margin: 0;
   }
 }

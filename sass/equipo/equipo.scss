@@ -67,35 +67,35 @@
         padding-top: 40px;
         text-align: center;
     }
-
-    .box-cartas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-
-    }
-
     .box-team {
+        height: 400px;
+        width: 100%;
         flex-direction: row;
         flex-wrap: nowrap;
+        .box-cartas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            .cartas1 img,
+            .cartas2 img {
+            border-radius: 10px;
+            width: 140px;
+            height: auto;
+            margin: 10px 70px;
+            
+            }
+            .cartas1 {
+                margin: 0 50px;
+            }
+        
+            .cartas2 {
+                margin: 0;
+            }
+        }
     }
 
-    .cartas1 img,
-    .cartas2 img {
-    border-radius: 10px;
-    width: 140px;
-    height: auto;
-    margin: 10px 70px;
-    
-    }
-    .cartas1 {
-        margin: 0 50px;
-    }
 
-    .cartas2 {
-        margin: 0;
-    }
 }
