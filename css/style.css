@@ -604,20 +604,20 @@ body {
     width: 100%;
     height: auto;
   }
-  .boxtext {
+  .Text-index2 .boxtext {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .boxtext .h2-materiales {
+  .Text-index2 .boxtext .h2-materiales {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     margin-top: 20px;
     color: white;
   }
-  .boxtext .p-text-index {
+  .Text-index2 .boxtext .p-text-index {
     padding: 0px 60px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -640,7 +640,11 @@ body {
     width: 90px;
     height: 100px;
     margin-bottom: 150px;
+    cursor: pointer;
     filter: invert(100%);
+  }
+  .boxicon img:hover {
+    transform: scale(1.1);
   }
 }
 @media (max-width: 1344px) {
