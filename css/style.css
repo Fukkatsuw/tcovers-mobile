@@ -350,12 +350,16 @@ body {
     height: auto;
     margin-top: 20px;
   }
+  .box-team .box-cartas .cartas1 h2,
+  .box-team .box-cartas .cartas2 h2 {
+    font-size: 1.1rem;
+  }
   .box-team .box-cartas .cartas1 img,
   .box-team .box-cartas .cartas2 img {
     border-radius: 10px;
-    width: 140px;
+    width: 150px;
     height: auto;
-    margin: 10px 70px;
+    margin: 5px 40px;
   }
   .box-team .box-cartas .cartas1 {
     margin: 0 50px;
@@ -375,6 +379,24 @@ body {
   background-color: #333;
 }
 
+.back-to-menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-to-menu:hover {
+  background-color: #707070;
+  transform: scale(1.1);
+}
+
 .form-container {
   background-color: white;
   width: 80%;
@@ -388,10 +410,16 @@ body {
   width: 500px;
   margin: 0 auto;
 }
+.form-container .login-container img {
+  width: 8vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .form-container .login-container h2 {
-  padding: 10px 0;
+  padding-bottom: 70px;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .form-container .welcome-screen-container {
   background-color: #FFD4D0;
@@ -408,6 +436,7 @@ body {
 .form-container .login-container > span {
   text-align: center;
   color: #555;
+  margin-top: -50px;
 }
 
 .form-container .login-container label {
@@ -468,6 +497,15 @@ body {
   border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.btn.btn-email-registro {
+  background-color: black;
+  color: white;
+}
+
+.btn.btn-email-registro:hover {
+  background-color: #333;
 }
 
 .btn.btn-login {

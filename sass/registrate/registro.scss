@@ -9,6 +9,23 @@
     background-color: #333;
 }
 
+.back-to-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-to-menu:hover{
+    background-color: #707070;
+    transform: scale(1.1);
+
+}
 .form-container{
     background-color: white;
     width: 80%;
@@ -20,10 +37,16 @@
     .login-container{
         width: 500px;
         margin: 0 auto;
+        img{
+            width: 8vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
         h2{
-            padding: 10px 0;
+            padding-bottom: 70px;
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
     }
     .welcome-screen-container{
@@ -43,6 +66,7 @@
 .form-container .login-container > span{
     text-align: center;
     color: #555;
+    margin-top: -50px;
 }
 .form-container .login-container label{
     display: block;
@@ -101,6 +125,15 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.btn.btn-email-registro{
+    background-color: black;
+    color: white;
+}
+.btn.btn-email-registro:hover{
+    background-color: #333;
+}
+
 .btn.btn-login{
     background-color: black;
     color: white;

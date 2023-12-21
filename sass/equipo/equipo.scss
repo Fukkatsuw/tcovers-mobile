@@ -79,12 +79,16 @@
             width: 100%;
             height: auto;
             margin-top: 20px;
+            .cartas1 h2,
+            .cartas2 h2{
+                font-size: 1.1rem;
+            }
             .cartas1 img,
             .cartas2 img {
             border-radius: 10px;
-            width: 140px;
+            width: 150px;
             height: auto;
-            margin: 10px 70px;
+            margin: 5px 40px;
             
             }
             .cartas1 {
