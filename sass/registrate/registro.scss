@@ -1,82 +1,155 @@
-$body-color: rgba(36, 36, 36, 1);
-$main-padding: 20px;
-$register-bg: #242424;
-$register-color: #F7F7F7;
-$register-border-radius: 20px;
-$register-box-shadow: 7px 13px 37px #000;
-$register-max-width: 400px;
-$controls-bg: #242424;
-$controls-margin-bottom: 10px;
-$controls-padding: 10px;
-$controls-border-radius: 4px;
-$controls-border: 1px solid #3D3D3D;
-$controls-font-size: 14px;
-$controls-color: white;
-$paragraph-color: #F7F7F7;
-$button-bg: #007BFF;
-$button-color: #fff;
-$button-padding: 10px;
-$button-cursor: pointer;
-$button-border-radius: 5px;
-$image-display: none;
-
-.body-registrate {
-    background: $body-color;
-}
-
-.registro-main {
+.registro-main{
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: $main-padding;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
 }
 
-.logo-registro img {
-    width: 150px;
-}
-
-.from-register {
-    background: $register-bg;
-    color: $register-color;
-    font-family: 'calibri';
-    padding: $main-padding;
-    border-radius: $register-border-radius;
-    box-shadow: $register-box-shadow;
-    width: 100%;
-    max-width: $register-max-width;
-    .from-register p {
-        text-decoration: none;
-        font-style: none;
-        text-align: center;
-        font-size: 13px;
-        line-height: 30px;
-        color: $paragraph-color;
+.form-container{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    .login-container{
+        width: 500px;
+        margin: 0 auto;
+        h2{
+            padding: 10px 0;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+    }
+    .welcome-screen-container{
+        background-color: #FFD4D0;
+        height: 100%;
+        width: 50%;
+        img{
+            width: 100vh;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
 
-.controls {
+
+.form-container .login-container > p,
+.form-container .login-container > span{
+    text-align: center;
+    color: #555;
+}
+.form-container .login-container label{
+    display: block;
+    padding: 5px 0;
+    font-weight: bold;
+    input.input{
+    display: block;
     width: 100%;
-    background: $controls-bg;
-    margin-bottom: $controls-margin-bottom;
-    padding: $controls-padding;
-    border-radius: $controls-border-radius;
     box-sizing: border-box;
-    border: $controls-border;
-    font-size: $controls-font-size;
-    color: $controls-color;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
 }
-
-.boton {
-    background-color: $button-bg;
-    color: $button-color;
-    border: none;
-    padding: $button-padding;
-    cursor: $button-cursor;
+}
+.form-container .login-container input.input{
+    display: block;
     width: 100%;
-    border-radius: $button-border-radius;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
 }
 
-.image-registro img {
-    display: $image-display;
+.form-container .login-container input.input:focus{
+    outline: solid 2px #0099ff;
+}
+
+.form-container .login-container .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    a{
+        color: #0099ff;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.form-container .login-container .providers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn.btn-login{
+    background-color: black;
+    color: white;
+}
+.btn.btn-login:hover{
+    background-color: #333;
+}
+.btn.btn-facebook{
+    background-color: rgb(10, 82, 216);
+    color: white;
+}
+.btn.btn-facebook:hover{
+    background-color: rgb(9, 64, 167);
+}
+.btn.btn-google{
+    background-color: white;
+    color: black;
+    border: solid 1px #ccc;
+}
+.btn.btn-google:hover{
+    background-color: rgb(240, 240, 240);
+
+}
+.btn.btn-twitter{
+    background-color: rgb(10,168,216);
+    color: white;
+}
+.btn.btn-twitter:hover{
+    background-color: rgb(9, 135, 173);
+}
+
+@media screen and (max-width: 1357px) {
+    .form-container{
+        width: 95%;
+        .welcome-screen-container{
+            display: none;
+        }
+        .login-container{
+            width: 400px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-container{
+        height: 70%;
+    }
+    .form-container .login-container{
+        width: 350px;
+    }
 }
