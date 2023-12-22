@@ -13,35 +13,40 @@
         <div class="form-container">
             <div class="login-container">
                 <img src="../icons/index/logoremove.png" alt="logoempresa">
-                <h2>Bienvenido</h2>
-                <p>Selecciona el metodo de autenticacion</p>
-
+                <h2>Registrate</h2>
+                <p>Por favor complete sus datos aqui</p>
                 <form action="#">
                     <p>
-                        <label for="username">Usuario</label>
-                        <input class="input" type="text" name="username" id="username" required>
+                        <label for="username">Nombre de usuario</label>
+                        <input class="input" type="text" name="username" id="username" required> 
                     </p>
                     <p>
                         <label for="password">Contraseña</label>
                         <input class="input" type="password" name="password" id="password" required>
                     </p>
-
+                    <p>
+                        <label for="password">Repetir Contraseña</label>
+                        <input class="input" type="password" name="password" id="password" required>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input class="input" type="email" name="email" id="email" required>
+                    </p>
                     <div class="options">
                         <div>
                             Recordar Usuario 
                             <input type="checkbox" name="rememberme" id="rememberme">
                         </div>
                         <div>
-                            <a href="#">Olvide mi password</a>
+                            <a href="../pages/registrate.html">Ya Tengo Cuenta</a>
                         </div>
                     </div>
 
                     <p>
-                        <input type="submit"  class="btn btn-login" value="Log in">
+                        <input type="submit"  class="btn btn-login" value="Registrarse">
                     </p>
                     <div class="providers">
                         <span>Seleccione otro metodo de autenticacion</span>
-                        <a href="../pages/base-registro.html" <button class="btn btn-email-registro">Registrate</button></a>
                         <button class="btn btn-google">Google</button>
                         <button class="btn btn-facebook">Facebook</button>
                         <button class="btn btn-twitter">Twitter</button>

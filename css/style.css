@@ -500,8 +500,10 @@ body {
 }
 
 .btn.btn-email-registro {
+  text-decoration: none;
   background-color: black;
   color: white;
+  font-size: 0.9rem;
 }
 
 .btn.btn-email-registro:hover {
@@ -559,12 +561,20 @@ body {
 }
 @media screen and (max-width: 900px) {
   .form-container {
-    height: 70%;
+    height: 80%;
   }
   .form-container .login-container {
     width: 350px;
   }
+  .form-container .login-container img {
+    display: none;
+  }
 }
+.main-ejemplos {
+  width: auto;
+  height: auto;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
